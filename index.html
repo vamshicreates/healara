@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Healara India | Korean microalgae & fucoxanthin skincare</title>
-<meta name="description" content="Healara is South Korea's first and India's only microalgal and fucoxanthin-based luxury skincare, developed from 15 years of KIST research in Gangneung. Toners, serums, creams and UV serums with clinical results.">
+<title>Healara India | Korean skincare for melasma, fine lines & lasting glow</title>
+<meta name="description" content="Korean sea-microalgae skincare for melasma, dark spots, fine lines, dryness and sun care. Every formula clinically tested, with results like −14% deep melasma in 2 weeks. Order on WhatsApp.">
 <meta name="theme-color" content="#0F3D35">
 <link rel="canonical" href="https://healara-india.vercel.app/">
 <meta property="og:type" content="website">
@@ -58,29 +58,37 @@
 <main id="main">
 
 <!-- HERO CAROUSEL -->
-<section class="hero" aria-roledescription="carousel" aria-label="Featured">
-  <div class="slides">
-    <article class="slide s-name is-active" aria-roledescription="slide">
-      <div class="sea" style="background-image:url(/assets/img/sea.webp)"></div>
-      <div class="caustics" aria-hidden="true"></div>
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <h1 class="etym">
-            <span class="w"><span class="word">Heal</span><span class="def">to become healthy again</span></span>
-            <span class="plus" aria-hidden="true">+</span>
-            <span class="w"><span class="word">ara</span><span class="def">the sea, in pure Korean</span></span>
-          </h1>
-          <p class="lede">South Korea’s first and India’s only microalgal and fucoxanthin-based luxury skincare, imported from South Korea.</p>
-          <div class="cta-row">
-            <a class="btn btn-light" href="#shop">Shop the collection</a>
-            <a class="btn btn-ghost-light" href="#finder">Find my ritual</a>
-          </div>
-        </div>
-        <figure class="hero-art"><img src="/assets/img/hero-collection.webp" alt="The Healara collection of toners, serums, creams and UV serums arranged on stone by the sea" width="1206" height="1254"></figure>
-      </div>
-    </article>
+<section class="mirror" aria-labelledby="mirror-h">
+  <div class="sea" style="background-image:url(/assets/img/sea.webp)"></div>
+  <div class="caustics" aria-hidden="true"></div>
+  <div class="wrap mirror-in">
+    <div class="mirror-q">
+      <h1 id="mirror-h">What do you want to see in the mirror?</h1>
+      <p class="lede">Korean skincare you choose by the result you want. Every formula is clinically tested, so you can see what it does before you buy.</p>
+      <div class="outcomes" id="outcomes" role="radiogroup" aria-label="Choose the result you want"></div>
+    </div>
+    <div class="mirror-res" id="mirror-res" aria-live="polite"></div>
+  </div>
+</section>
 
-    <article class="slide s-ritual" aria-roledescription="slide">
+<!-- TRUST -->
+<section class="trust" aria-label="Why Healara">
+  <div class="wrap trust-in">
+    <div><b>15 years</b><span>of research at KIST Gangneung</span></div>
+    <div><b>Clinically tested</b><span>every formula, results on every product</span></div>
+    <div><b>Made by scientists</b><span>discovered, manufactured and marketed by them</span></div>
+    <div><b>Authentic import</b><span>exclusive Indian distributor, Amorisha Empires</span></div>
+  </div>
+</section>
+
+<!-- RESULTS CAROUSEL -->
+<section class="hero results" aria-roledescription="carousel" aria-labelledby="results-h">
+  <div class="wrap sec-head results-head">
+    <h2 id="results-h">Results you can see in weeks</h2>
+    <p>Numbers from Healara’s clinical studies, not marketing promises.</p>
+  </div>
+  <div class="slides">
+    <article class="slide s-ritual is-active" aria-roledescription="slide">
       <div class="ritual-hero">
         <div class="hero-copy">
           <p class="kicker">The Melasma Reset ritual</p>
@@ -99,21 +107,33 @@
     <article class="slide s-prod tone-pearl" aria-roledescription="slide">
       <div class="hero-grid">
         <div class="hero-copy">
-          <p class="kicker">Radiance Shot Double Intensive Serum</p>
-          <h2 class="big">Fades deep melasma.<br>Not just the surface.</h2>
-          <p class="stat"><b>−14.06%</b> deep inner melasma after 2 weeks, with tranexamic acid at 1%.</p>
+          <p class="kicker">For deep melasma: Double Intensive Serum</p>
+          <h2 class="big">Deep melasma,<br>14% lighter in two weeks.</h2>
+          <p class="stat"><b>−14.06%</b> deep inner melasma in clinical testing, with 1% tranexamic acid.</p>
           <div class="cta-row"><button class="btn btn-dark" data-add="radiance-double-serum">Add to bag, ₹2,700</button><a class="btn btn-ghost" href="#p/radiance-double-serum">See results</a></div>
         </div>
         <figure class="hero-prod"><img src="/assets/products/radiance-double-serum.webp" alt="Radiance Shot Double Intensive Serum, 30 ml" loading="lazy"></figure>
       </div>
     </article>
 
+    <article class="slide s-prod tone-pearl" aria-roledescription="slide">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">For fine lines and firmness: Firming Ampoule</p>
+          <h2 class="big">Softer fine lines<br>in two weeks.</h2>
+          <p class="stat"><b>−11.74%</b> crow’s feet and fine wrinkles, and +51.12% skin hydration density, after 2 weeks.</p>
+          <div class="cta-row"><button class="btn btn-dark" data-add="core-lift-ampoule">Add to bag, ₹3,380</button><a class="btn btn-ghost" href="#p/core-lift-ampoule">See results</a></div>
+        </div>
+        <figure class="hero-prod"><img src="/assets/products/core-lift-ampoule.webp" alt="Core Lift Firming Ampoule, 30 ml" loading="lazy"></figure>
+      </div>
+    </article>
+
     <article class="slide s-prod tone-algae" aria-roledescription="slide">
       <div class="hero-grid">
         <div class="hero-copy">
-          <p class="kicker">Core Revive Activating Cream</p>
-          <h2 class="big">Both pan actives.<br>One night cream.</h2>
-          <p class="stat"><b>54.22%</b> skin barrier recovery, against 31.82% in untreated skin.</p>
+          <p class="kicker">For ageing, stressed skin: Activating Cream</p>
+          <h2 class="big">Skin that bounces<br>back faster.</h2>
+          <p class="stat"><b>54.22%</b> barrier recovery after irritation, against 31.82% untreated, plus 25.12% facial lift in 2 weeks.</p>
           <div class="cta-row"><button class="btn btn-light" data-add="core-revive-cream">Add to bag, ₹4,100</button><a class="btn btn-ghost-light" href="#p/core-revive-cream">See results</a></div>
         </div>
         <figure class="hero-prod"><img src="/assets/products/core-revive-cream.webp" alt="Core Revive Activating Cream, 50 ml" loading="lazy"></figure>
@@ -123,9 +143,9 @@
     <article class="slide s-prod tone-blush" aria-roledescription="slide">
       <div class="hero-grid">
         <div class="hero-copy">
-          <p class="kicker">Radiance Shot Tone Up UV Serum</p>
-          <h2 class="big">Sun protection that<br>brightens on contact.</h2>
-          <p class="stat"><b>+68.97%</b> skin radiance right after you apply it, maintained for 30 hours.</p>
+          <p class="kicker">For a bright, sun-protected day: Tone Up UV Serum</p>
+          <h2 class="big">A glow that lasts<br>30 hours.</h2>
+          <p class="stat"><b>+68.97%</b> skin radiance right after you apply it, maintained for 30 hours, with UV protection.</p>
           <div class="cta-row"><button class="btn btn-dark" data-add="radiance-toneup-uv">Add to bag, ₹2,100</button><a class="btn btn-ghost" href="#p/radiance-toneup-uv">See results</a></div>
         </div>
         <figure class="hero-prod"><img src="/assets/products/radiance-toneup-uv.webp" alt="Radiance Shot Tone Up UV Serum, 50 ml" loading="lazy"></figure>
@@ -139,15 +159,7 @@
   </div>
 </section>
 
-<!-- TRUST -->
-<section class="trust" aria-label="Why Healara">
-  <div class="wrap trust-in">
-    <div><b>15 years</b><span>of research at KIST Gangneung</span></div>
-    <div><b>Clinically tested</b><span>every formula, results on every product</span></div>
-    <div><b>Made by scientists</b><span>discovered, manufactured and marketed by them</span></div>
-    <div><b>Authentic import</b><span>exclusive Indian distributor, Amorisha Empires</span></div>
-  </div>
-</section>
+
 
 <!-- ROUTINE STEPS -->
 <section class="sec" id="ritual">
@@ -164,8 +176,8 @@
 <section class="sec sec-mist" id="concerns">
   <div class="wrap">
     <div class="sec-head">
-      <h2>Shop by skin concern</h2>
-      <p>Tell us what’s bothering your skin. We’ll show what’s been tested on it.</p>
+      <h2>What’s bothering your skin?</h2>
+      <p>Pick what you see in the mirror. We’ll show the formulas tested on it.</p>
     </div>
     <div class="concerns" id="concern-tiles"></div>
   </div>
@@ -248,14 +260,15 @@
 <section class="sec science" id="science">
   <div class="wrap">
     <div class="sec-head">
-      <h2>Two actives from the sea</h2>
-      <p>Named after Dr. Cheol-Ho Pan, CEO of Microalgae Ask Us, who first isolated fucoxanthin in pure form in 2012.</p>
+      <h2>Why it works</h2>
+      <p>Two actives grown from Korean sea microalgae, explained in plain words. Both are named after Dr. Cheol-Ho Pan, who first isolated fucoxanthin in pure form in 2012.</p>
     </div>
     <div class="actives">
       <article class="active fuco">
         <img src="/assets/img/fucoxanthin.webp" alt="Orange fucoxanthin bioactive in a glass dish" loading="lazy">
         <div>
           <h3>panFucoxanthin</h3>
+          <p class="foryou">What it does for you: shields skin from light and inflammation, two big triggers of pigmentation and early ageing.</p>
           <p>A natural carotenoid from brown algae and marine microalgae like diatoms. It can’t easily be synthesised, so it’s sourced from nature. It absorbs visible light between 400 and 500 nm and is known for strong antioxidant, anti-inflammatory and anti-ageing effects.</p>
           <p class="in">In the Firming Ampoule (750 ppm) and Activating Cream (450 ppm).</p>
         </div>
@@ -264,6 +277,7 @@
         <img src="/assets/img/chlorella.webp" alt="Green chlorella vulgaris extract in a glass dish" loading="lazy">
         <div>
           <h3>panChlorella vulgaris</h3>
+          <p class="foryou">What it does for you: calms irritated skin and feeds it proteins, vitamins and minerals so it recovers faster.</p>
           <p>A microscopic green microalga, 2 to 10 μm across, that makes proteins, vitamins, minerals and polyunsaturated fatty acids through photosynthesis. It’s a powerful antioxidant with anti-inflammatory properties that help calm the skin.</p>
           <p class="in">In all nine formulas, from 0.015% to 0.03%.</p>
         </div>
@@ -296,9 +310,10 @@
   <div class="wrap story-in">
     <div class="story-img"><img src="/assets/img/forest-jar.webp" alt="A Healara jar resting among a dense green forest canopy" loading="lazy"></div>
     <div class="story-copy">
+      <p class="name-mean"><span><b>Heal</b>to become healthy again</span><i aria-hidden="true">+</i><span><b class="it">ara</b>the sea, in pure Korean</span></p>
       <h2>Born from the waters of Gangneung</h2>
       <p>Healara is the result of 15 years of research at the Korea Institute of Science and Technology (KIST) Gangneung Institute of Natural Products, and Microalgae Ask Us (MAUS).</p>
-      <p>It promises more than skin recovery: a skincare ritual that refreshes skin and spirit through the restorative power of the sea.</p>
+      <p>South Korea’s first, and India’s only, skincare built on microalgae and fucoxanthin. It promises more than skin recovery: a ritual that refreshes skin and spirit through the restorative power of the sea.</p>
       <div class="founder">
         <img src="/assets/img/dr-sayan.webp" alt="Dr. Sayan Dutta Gupta" loading="lazy">
         <p>In India, <b>Amorisha Empires LLP</b>, led by <b>Dr. Sayan Dutta Gupta</b>, former Visiting Scientist at KIST’s Gangneung Institute of Natural Products, is the exclusive importer and distributor.</p>

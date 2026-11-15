@@ -3,7 +3,7 @@ window.HEALARA = {
   phone: "919154461422",
   products: [
     {
-      id: "core-enhance-toner",
+      id: "core-enhance-toner", for: "For clogged pores and a fresh start",
       line: "Core Enhance", name: "Brightening Toner", step: "prep", size: "150 ml", mrp: 3000,
       benefits: ["Skin preparation", "Pore cleansing", "Barrier recovery", "Mild hydration"],
       concerns: ["pores", "barrier", "dryness"],
@@ -18,7 +18,7 @@ window.HEALARA = {
       ]
     },
     {
-      id: "core-lift-fluid",
+      id: "core-lift-fluid", for: "For dark spots and a daily glow",
       line: "Core Lift", name: "Brightening Fluid", step: "moisturise", size: "120 ml", mrp: 3500,
       benefits: ["Intense brightening", "Dark spots & freckles", "Daily moisturiser"],
       concerns: ["pigmentation", "dullness", "dryness"],
@@ -32,7 +32,7 @@ window.HEALARA = {
       ]
     },
     {
-      id: "core-lift-ampoule",
+      id: "core-lift-ampoule", for: "For fine lines and firmness",
       line: "Core Lift", name: "Firming Ampoule", step: "treat", size: "30 ml", mrp: 3380,
       benefits: ["Anti-ageing", "Wrinkle care", "Redness & acne", "Pore reduction"],
       concerns: ["ageing", "acne", "pores"],
@@ -50,7 +50,7 @@ window.HEALARA = {
       ]
     },
     {
-      id: "core-revive-cream",
+      id: "core-revive-cream", for: "For ageing skin that needs repair",
       line: "Core Revive", name: "Activating Cream", step: "moisturise", size: "50 ml", mrp: 4100,
       benefits: ["Anti-ageing with moisturisation", "Mild melasma", "Brightening", "Pore care"],
       concerns: ["ageing", "melasma", "pores", "dryness"],
@@ -68,7 +68,7 @@ window.HEALARA = {
       ]
     },
     {
-      id: "radiance-moisture-toner",
+      id: "radiance-moisture-toner", for: "For thirsty or oily-dehydrated skin",
       line: "Radiance Shot", name: "Moisture Toner", step: "prep", size: "150 ml", mrp: 2300,
       benefits: ["Intense hydration", "Sebum control", "Skin preparation", "Tone improvement"],
       concerns: ["dryness", "oiliness", "dullness"],
@@ -84,7 +84,7 @@ window.HEALARA = {
       ]
     },
     {
-      id: "radiance-double-serum",
+      id: "radiance-double-serum", for: "For deep melasma",
       line: "Radiance Shot", name: "Double Intensive Serum", step: "treat", size: "30 ml", mrp: 2700,
       benefits: ["Moderate-severe melasma", "Intense brightening", "Moisturisation"],
       concerns: ["melasma", "pigmentation", "dullness"],
@@ -101,7 +101,7 @@ window.HEALARA = {
       ]
     },
     {
-      id: "radiance-barrier-cream",
+      id: "radiance-barrier-cream", for: "For stressed, sensitive skin",
       line: "Radiance Shot", name: "Barrier Protect Cream", step: "moisturise", size: "50 ml", mrp: 2600,
       benefits: ["Barrier repair", "Brightening", "UV / IR damage recovery", "Intense moisturisation"],
       concerns: ["barrier", "sun", "dryness", "dullness"],
@@ -118,7 +118,7 @@ window.HEALARA = {
       ]
     },
     {
-      id: "radiance-toneup-uv",
+      id: "radiance-toneup-uv", for: "For a bright, sun-protected day",
       line: "Radiance Shot", name: "Tone Up UV Serum", step: "protect", size: "50 ml", mrp: 2100,
       benefits: ["Instant tone-up", "UV protection", "Brightening"],
       concerns: ["sun", "dullness", "pigmentation"],
@@ -135,7 +135,7 @@ window.HEALARA = {
       ]
     },
     {
-      id: "radiance-uv-moisture",
+      id: "radiance-uv-moisture", for: "For dry skin that needs sun care",
       line: "Radiance Shot", name: "UV Serum Moisture", step: "protect", size: "50 ml", mrp: 2100,
       benefits: ["Moisturising", "UV protection"],
       concerns: ["sun", "dryness", "barrier"],
@@ -153,6 +153,15 @@ window.HEALARA = {
     }
   ],
 
+  outcomes: [
+    { id: "even", label: "Even, spot-free skin", product: "radiance-double-serum", concern: "melasma", head: "Deep melasma, 14% lighter in two weeks.", stat: "−14.06%", statT: "deep inner melasma after 2 weeks" },
+    { id: "firm", label: "Firmer, lifted skin", product: "core-lift-ampoule", concern: "ageing", head: "Softer fine lines in two weeks.", stat: "−11.74%", statT: "crow’s feet and fine wrinkles after 2 weeks" },
+    { id: "hydrated", label: "Plump, hydrated glow", product: "radiance-moisture-toner", concern: "dryness", head: "92% more moisture after one use.", stat: "+92.10%", statT: "skin moisture right after one application" },
+    { id: "calm", label: "Calm, comfortable skin", product: "radiance-barrier-cream", concern: "barrier", head: "Stays hydrated, even in dry AC air.", stat: "+587.36%", statT: "skin moisture in extremely dry conditions" },
+    { id: "bright", label: "Bright, sun-protected skin", product: "radiance-toneup-uv", concern: "sun", head: "A glow that lasts 30 hours.", stat: "+68.97%", statT: "skin radiance, maintained for 30 hours" },
+    { id: "pores", label: "Clear, refined pores", product: "core-enhance-toner", concern: "pores", head: "97% fewer pore impurities after one use.", stat: "97.41%", statT: "decrease in pore impurities after a single use" }
+  ],
+
   steps: [
     { id: "prep", n: 1, title: "Prep", line: "Toners that clear pores and ready skin to drink in what follows." },
     { id: "treat", n: 2, title: "Treat", line: "Concentrated serums for melasma, spots, wrinkles and firmness." },
@@ -161,16 +170,16 @@ window.HEALARA = {
   ],
 
   concerns: [
-    { id: "melasma", title: "Melasma", line: "Deep and surface patches" },
-    { id: "pigmentation", title: "Dark spots & freckles", line: "Uneven, spotted tone" },
-    { id: "ageing", title: "Fine lines & firmness", line: "Wrinkles, loss of lift" },
-    { id: "dryness", title: "Dryness", line: "Tight, thirsty skin" },
-    { id: "barrier", title: "Damaged barrier", line: "Sensitised, stressed skin" },
-    { id: "pores", title: "Pores & texture", line: "Visible, clogged pores" },
-    { id: "acne", title: "Redness & acne", line: "Calm breakouts and flushing" },
-    { id: "sun", title: "Sun damage", line: "Daily UV and IR stress" },
-    { id: "dullness", title: "Dullness", line: "Tired, flat complexion" },
-    { id: "oiliness", title: "Excess oil", line: "Shine and sebum" }
+    { id: "melasma", title: "Melasma", line: "Patches that won’t fade?" },
+    { id: "pigmentation", title: "Dark spots & freckles", line: "Spots that keep coming back?" },
+    { id: "ageing", title: "Fine lines & firmness", line: "Lines showing up early?" },
+    { id: "dryness", title: "Dryness", line: "Tight and flaky in the AC?" },
+    { id: "barrier", title: "Damaged barrier", line: "Skin that stings or reddens?" },
+    { id: "pores", title: "Pores & texture", line: "Pores you can see from a distance?" },
+    { id: "acne", title: "Redness & acne", line: "Breakouts and flushing?" },
+    { id: "sun", title: "Sun damage", line: "Out in the sun every day?" },
+    { id: "dullness", title: "Dullness", line: "Looking tired by 4pm?" },
+    { id: "oiliness", title: "Excess oil", line: "Shiny in the humidity?" }
   ],
 
   lines: [

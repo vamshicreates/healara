@@ -8,6 +8,7 @@
   const inr = n => "₹" + n.toLocaleString("en-IN");
   const img = (id, alt = "") => `<img src="/assets/products/${id}.webp" alt="${alt}" loading="lazy"${SHORT.has(id) ? ' class="short"' : ""}>`;
   const full = p => `${p.line} ${p.name}`;
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
   /* ---------- storage-safe bag ---------- */
@@ -15,10 +16,48 @@
   try { bag = JSON.parse(localStorage.getItem("healara-bag") || "{}") || {}; } catch (e) { bag = {}; }
   const saveBag = () => { try { localStorage.setItem("healara-bag", JSON.stringify(bag)); } catch (e) {} };
 
+  /* ---------- mirror (outcome) picker ---------- */
+  const oWrap = $("#outcomes"), oRes = $("#mirror-res");
+  function showOutcome(id, focus) {
+    const o = D.outcomes.find(x => x.id === id) || D.outcomes[0], p = P[o.product];
+    $$("button", oWrap).forEach(b => { const on = b.dataset.o === o.id; b.setAttribute("aria-checked", on); b.tabIndex = on ? 0 : -1; if (on && focus) b.focus(); });
+    oRes.innerHTML = `<div class="mr-card">
+      <a class="mr-img" href="#p/${p.id}" aria-label="View ${esc(full(p))}">${img(p.id, full(p)).replace(' loading="lazy"', "")}</a>
+      <div class="mr-copy">
+        <p class="mr-for">${p.for}</p>
+        <h2 class="mr-head">${o.head}</h2>
+        <p class="mr-stat"><b>${o.stat}</b> ${o.statT}, in clinical testing.</p>
+        <p class="mr-prod"><span>${full(p)}</span>${p.size}, ${inr(p.mrp)}</p>
+        <div class="cta-row"><button class="btn btn-light" data-add="${p.id}">Add to bag</button><a class="btn btn-ghost-light" href="#p/${p.id}">See the proof</a></div>
+        <button class="mr-ritual" data-ritual-concern="${o.concern}">Build my full routine for this</button>
+      </div></div>`;
+  }
+  oWrap.innerHTML = D.outcomes.map(o => `<button role="radio" aria-checked="false" data-o="${o.id}">${o.label}</button>`).join("");
+  oWrap.addEventListener("click", e => {
+    const b = e.target.closest("[data-o]"); if (!b) return;
+    showOutcome(b.dataset.o);
+    b.scrollIntoView({ block: "nearest", inline: "center", behavior: reduce ? "auto" : "smooth" });
+    const r = oRes.getBoundingClientRect();
+    if (r.bottom > innerHeight) setTimeout(() => oRes.scrollIntoView({ block: "end", behavior: reduce ? "auto" : "smooth" }), 120);
+  });
+  oWrap.addEventListener("keydown", e => {
+    if (!["ArrowRight", "ArrowLeft", "ArrowDown", "ArrowUp"].includes(e.key)) return;
+    e.preventDefault();
+    const ids = D.outcomes.map(o => o.id), curId = $("[aria-checked=true]", oWrap).dataset.o;
+    const n = ids.indexOf(curId) + (e.key === "ArrowRight" || e.key === "ArrowDown" ? 1 : -1);
+    showOutcome(ids[(n + ids.length) % ids.length], true);
+  });
+  showOutcome(D.outcomes[0].id);
+  document.addEventListener("click", e => {
+    const r = e.target.closest("[data-ritual-concern]"); if (!r) return;
+    const inp = $(`#q-concern input[value="${r.dataset.ritualConcern}"]`); if (inp) inp.checked = true;
+    $("#finder").scrollIntoView({ behavior: reduce ? "auto" : "smooth" });
+    setTimeout(() => { const t = $("#q-type input"); t && t.focus({ preventScroll: true }); }, 600);
+  });
+
   /* ---------- hero carousel ---------- */
   const hero = $(".hero"), slides = $$(".slide", hero), dots = $(".dots", hero);
   let cur = 0, timer = null;
-  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   slides.forEach((s, i) => {
     const b = document.createElement("button");
     b.setAttribute("role", "tab"); b.setAttribute("aria-label", `Slide ${i + 1}`);
@@ -112,8 +151,8 @@
     return `<article class="card">
       <a class="card-img" href="#p/${p.id}" aria-label="View ${esc(full(p))}">${img(p.id, full(p))}<span class="size">${p.size}</span>${p.fuco ? '<span class="fuco-tag">Fucoxanthin</span>' : ""}</a>
       <div class="card-body">
-        <span class="card-line">${p.line}</span>
-        <h3><a href="#p/${p.id}">${p.name}</a></h3>
+        <h3><a href="#p/${p.id}">${p.for}</a></h3>
+        <span class="card-name">${p.name}<small>${p.line}</small></span>
         <div class="tags">${p.benefits.slice(0, 3).map(b => `<span>${b}</span>`).join("")}</div>
         <div class="proof"><b>${p.proof.v}</b><span>${p.proof.t}</span></div>
         <div class="card-foot"><span class="price">${inr(p.mrp)}<small>MRP, incl. taxes</small></span>
@@ -274,8 +313,9 @@
     <div class="pd-in">
       <div class="pd-media">${img(p.id, full(p)).replace(' loading="lazy"', "")}</div>
       <div class="pd-body">
-        <span class="pd-line">${p.line}</span>
+        <span class="pd-line">${p.for}</span>
         <h2 id="pd-title">${p.name}</h2>
+        <span class="pd-sub">${p.line}</span>
         <div class="pd-meta"><span class="price">${inr(p.mrp)}</span><span class="sz">${p.size}, MRP incl. taxes</span></div>
         <div class="tags">${p.benefits.map(b => `<span>${b}</span>`).join("")}</div>
         <div class="pd-buy"><button class="btn btn-dark" data-add="${p.id}">Add to bag</button>
