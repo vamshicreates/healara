@@ -1,0 +1,295 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="t">
+<title id="t">Microscope view of round green Chlorella vulgaris cells, each 2 to 10 micrometres across</title>
+<defs>
+<radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0" stop-color="#EEF6E8"/><stop offset="1" stop-color="#D7E9CC"/></radialGradient>
+<radialGradient id="field" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#F7FBF2"/><stop offset=".85" stop-color="#E4F0DA"/><stop offset="1" stop-color="#CFE3C2"/></radialGradient>
+<radialGradient id="cell" cx="38%" cy="35%" r="70%"><stop offset="0" stop-color="#B9DB8E"/><stop offset=".55" stop-color="#6FA64A"/><stop offset="1" stop-color="#3E7A2C"/></radialGradient>
+<radialGradient id="cell2" cx="38%" cy="35%" r="70%"><stop offset="0" stop-color="#CBE6A6"/><stop offset=".6" stop-color="#86B95E"/><stop offset="1" stop-color="#4F8A3A"/></radialGradient>
+<clipPath id="lens"><circle cx="400" cy="265" r="215"/></clipPath>
+</defs>
+<rect width="800" height="520" fill="url(#bg)"/>
+<circle cx="400" cy="265" r="229" fill="#2E5E23" opacity=".12"/>
+<circle cx="400" cy="265" r="215" fill="url(#field)"/>
+<g clip-path="url(#lens)">
+<g transform="translate(377.4 431.9) rotate(263)">
+<circle r="28.7" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -20.7 0 A 20.7 20.7 0 1 0 20.7 0 A 12.8 11.4 0 1 1 -20.7 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="5.2" cy="-3.4" r="5.7" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-10.1" cy="-11.5" r="4.6" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(537.7 74.2) rotate(38)">
+<circle r="36.7" fill="url(#cell2)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -26.4 0 A 26.4 26.4 0 1 0 26.4 0 A 16.4 14.5 0 1 1 -26.4 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="6.6" cy="-4.4" r="7.3" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-12.8" cy="-14.7" r="5.9" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(463.2 309.9) rotate(307)">
+<circle r="41.3" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -29.8 0 A 29.8 29.8 0 1 0 29.8 0 A 18.5 16.4 0 1 1 -29.8 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="7.4" cy="-5.0" r="8.3" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-14.5" cy="-16.5" r="6.6" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(239.0 37.1) rotate(355)">
+<circle r="40.3" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -29.0 0 A 29.0 29.0 0 1 0 29.0 0 A 18.0 16.0 0 1 1 -29.0 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="7.3" cy="-4.8" r="8.1" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-14.1" cy="-16.1" r="6.5" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(446.8 395.7) rotate(333)">
+<circle r="18.2" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -13.1 0 A 13.1 13.1 0 1 0 13.1 0 A 8.1 7.2 0 1 1 -13.1 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="3.3" cy="-2.2" r="3.6" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-6.4" cy="-7.3" r="2.9" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(633.0 424.9) rotate(43)">
+<circle r="33.9" fill="url(#cell2)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -24.4 0 A 24.4 24.4 0 1 0 24.4 0 A 15.1 13.4 0 1 1 -24.4 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="6.1" cy="-4.1" r="6.8" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-11.9" cy="-13.6" r="5.4" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(179.0 294.7) rotate(8)">
+<circle r="25.8" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -18.6 0 A 18.6 18.6 0 1 0 18.6 0 A 11.5 10.2 0 1 1 -18.6 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="4.6" cy="-3.1" r="5.2" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-9.0" cy="-10.3" r="4.1" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(341.5 363.2) rotate(183)">
+<circle r="24.5" fill="url(#cell2)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -17.7 0 A 17.7 17.7 0 1 0 17.7 0 A 10.9 9.7 0 1 1 -17.7 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="4.4" cy="-2.9" r="4.9" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-8.6" cy="-9.8" r="3.9" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(228.3 362.3) rotate(266)">
+<circle r="16.7" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -12.0 0 A 12.0 12.0 0 1 0 12.0 0 A 7.4 6.6 0 1 1 -12.0 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="3.0" cy="-2.0" r="3.3" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-5.8" cy="-6.7" r="2.7" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(345.4 215.6) rotate(93)">
+<circle r="31.8" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -22.9 0 A 22.9 22.9 0 1 0 22.9 0 A 14.2 12.6 0 1 1 -22.9 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="5.7" cy="-3.8" r="6.4" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-11.1" cy="-12.7" r="5.1" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(436.2 49.8) rotate(255)">
+<circle r="42.0" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -30.2 0 A 30.2 30.2 0 1 0 30.2 0 A 18.7 16.6 0 1 1 -30.2 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="7.6" cy="-5.0" r="8.4" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-14.7" cy="-16.8" r="6.7" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(172.3 203.3) rotate(75)">
+<circle r="14.6" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -10.5 0 A 10.5 10.5 0 1 0 10.5 0 A 6.5 5.8 0 1 1 -10.5 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="2.6" cy="-1.8" r="2.9" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-5.1" cy="-5.8" r="2.3" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(282.3 119.2) rotate(157)">
+<circle r="33.2" fill="url(#cell2)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -23.9 0 A 23.9 23.9 0 1 0 23.9 0 A 14.8 13.1 0 1 1 -23.9 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="6.0" cy="-4.0" r="6.6" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-11.6" cy="-13.3" r="5.3" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(579.6 313.7) rotate(157)">
+<circle r="33.3" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -24.0 0 A 24.0 24.0 0 1 0 24.0 0 A 14.9 13.2 0 1 1 -24.0 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="6.0" cy="-4.0" r="6.7" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-11.6" cy="-13.3" r="5.3" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(277.1 361.2) rotate(225)">
+<circle r="23.2" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -16.7 0 A 16.7 16.7 0 1 0 16.7 0 A 10.4 9.2 0 1 1 -16.7 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="4.2" cy="-2.8" r="4.6" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-8.1" cy="-9.3" r="3.7" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(511.4 453.1) rotate(314)">
+<circle r="22.9" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -16.5 0 A 16.5 16.5 0 1 0 16.5 0 A 10.2 9.1 0 1 1 -16.5 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="4.1" cy="-2.7" r="4.6" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-8.0" cy="-9.1" r="3.7" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(408.8 271.8) rotate(278)">
+<circle r="18.6" fill="url(#cell2)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -13.4 0 A 13.4 13.4 0 1 0 13.4 0 A 8.3 7.4 0 1 1 -13.4 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="3.4" cy="-2.2" r="3.7" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-6.5" cy="-7.5" r="3.0" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(597.8 128.6) rotate(265)">
+<circle r="35.4" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -25.5 0 A 25.5 25.5 0 1 0 25.5 0 A 15.8 14.0 0 1 1 -25.5 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="6.4" cy="-4.2" r="7.1" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-12.4" cy="-14.2" r="5.7" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(466.3 220.4) rotate(317)">
+<circle r="18.6" fill="url(#cell2)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -13.4 0 A 13.4 13.4 0 1 0 13.4 0 A 8.3 7.4 0 1 1 -13.4 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="3.3" cy="-2.2" r="3.7" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-6.5" cy="-7.4" r="3.0" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(539.5 492.5) rotate(237)">
+<circle r="15.5" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -11.2 0 A 11.2 11.2 0 1 0 11.2 0 A 6.9 6.1 0 1 1 -11.2 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="2.8" cy="-1.9" r="3.1" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-5.4" cy="-6.2" r="2.5" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(500.7 384.9) rotate(323)">
+<circle r="19.5" fill="url(#cell2)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -14.0 0 A 14.0 14.0 0 1 0 14.0 0 A 8.7 7.7 0 1 1 -14.0 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="3.5" cy="-2.3" r="3.9" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-6.8" cy="-7.8" r="3.1" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(418.7 475.0) rotate(319)">
+<circle r="22.4" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -16.2 0 A 16.2 16.2 0 1 0 16.2 0 A 10.0 8.9 0 1 1 -16.2 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="4.0" cy="-2.7" r="4.5" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-7.9" cy="-9.0" r="3.6" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(257.5 447.0) rotate(267)">
+<circle r="30.7" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -22.1 0 A 22.1 22.1 0 1 0 22.1 0 A 13.7 12.1 0 1 1 -22.1 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="5.5" cy="-3.7" r="6.1" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-10.7" cy="-12.3" r="4.9" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(625.8 489.4) rotate(82)">
+<circle r="23.5" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -16.9 0 A 16.9 16.9 0 1 0 16.9 0 A 10.5 9.3 0 1 1 -16.9 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="4.2" cy="-2.8" r="4.7" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-8.2" cy="-9.4" r="3.8" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(205.4 134.1) rotate(342)">
+<circle r="38.1" fill="url(#cell2)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -27.4 0 A 27.4 27.4 0 1 0 27.4 0 A 17.0 15.1 0 1 1 -27.4 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="6.9" cy="-4.6" r="7.6" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-13.3" cy="-15.2" r="6.1" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(358.2 83.7) rotate(359)">
+<circle r="21.7" fill="url(#cell2)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -15.7 0 A 15.7 15.7 0 1 0 15.7 0 A 9.7 8.6 0 1 1 -15.7 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="3.9" cy="-2.6" r="4.3" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-7.6" cy="-8.7" r="3.5" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(407.5 218.3) rotate(157)">
+<circle r="14.0" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -10.1 0 A 10.1 10.1 0 1 0 10.1 0 A 6.3 5.6 0 1 1 -10.1 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="2.5" cy="-1.7" r="2.8" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-4.9" cy="-5.6" r="2.2" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(505.1 144.9) rotate(107)">
+<circle r="24.7" fill="url(#cell2)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -17.8 0 A 17.8 17.8 0 1 0 17.8 0 A 11.0 9.8 0 1 1 -17.8 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="4.5" cy="-3.0" r="4.9" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-8.7" cy="-9.9" r="4.0" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(267.5 499.2) rotate(277)">
+<circle r="15.4" fill="url(#cell2)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -11.1 0 A 11.1 11.1 0 1 0 11.1 0 A 6.9 6.1 0 1 1 -11.1 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="2.8" cy="-1.9" r="3.1" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-5.4" cy="-6.2" r="2.5" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(250.2 243.4) rotate(211)">
+<circle r="18.8" fill="url(#cell2)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -13.5 0 A 13.5 13.5 0 1 0 13.5 0 A 8.4 7.4 0 1 1 -13.5 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="3.4" cy="-2.3" r="3.8" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-6.6" cy="-7.5" r="3.0" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(209.6 402.4) rotate(123)">
+<circle r="19.9" fill="url(#cell2)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -14.3 0 A 14.3 14.3 0 1 0 14.3 0 A 8.9 7.9 0 1 1 -14.3 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="3.6" cy="-2.4" r="4.0" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-7.0" cy="-8.0" r="3.2" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(346.4 485.9) rotate(141)">
+<circle r="20.1" fill="url(#cell2)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -14.5 0 A 14.5 14.5 0 1 0 14.5 0 A 9.0 7.9 0 1 1 -14.5 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="3.6" cy="-2.4" r="4.0" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-7.0" cy="-8.0" r="3.2" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(609.3 227.7) rotate(124)">
+<circle r="28.5" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -20.5 0 A 20.5 20.5 0 1 0 20.5 0 A 12.7 11.3 0 1 1 -20.5 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="5.1" cy="-3.4" r="5.7" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-10.0" cy="-11.4" r="4.6" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(392.1 156.8) rotate(93)">
+<circle r="29.2" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -21.0 0 A 21.0 21.0 0 1 0 21.0 0 A 13.0 11.6 0 1 1 -21.0 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="5.3" cy="-3.5" r="5.8" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-10.2" cy="-11.7" r="4.7" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(558.9 391.4) rotate(137)">
+<circle r="31.7" fill="url(#cell2)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -22.8 0 A 22.8 22.8 0 1 0 22.8 0 A 14.1 12.5 0 1 1 -22.8 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="5.7" cy="-3.8" r="6.3" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-11.1" cy="-12.7" r="5.1" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(512.3 203.1) rotate(108)">
+<circle r="16.9" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -12.2 0 A 12.2 12.2 0 1 0 12.2 0 A 7.5 6.7 0 1 1 -12.2 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="3.0" cy="-2.0" r="3.4" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-5.9" cy="-6.8" r="2.7" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(317.8 315.9) rotate(269)">
+<circle r="21.8" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -15.7 0 A 15.7 15.7 0 1 0 15.7 0 A 9.7 8.6 0 1 1 -15.7 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="3.9" cy="-2.6" r="4.4" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-7.6" cy="-8.7" r="3.5" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(625.5 31.6) rotate(22)">
+<circle r="30.0" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -21.6 0 A 21.6 21.6 0 1 0 21.6 0 A 13.4 11.9 0 1 1 -21.6 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="5.4" cy="-3.6" r="6.0" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-10.5" cy="-12.0" r="4.8" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(367.5 34.4) rotate(19)">
+<circle r="16.8" fill="url(#cell2)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -12.1 0 A 12.1 12.1 0 1 0 12.1 0 A 7.5 6.6 0 1 1 -12.1 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="3.0" cy="-2.0" r="3.4" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-5.9" cy="-6.7" r="2.7" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(189.7 485.0) rotate(301)">
+<circle r="30.8" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -22.2 0 A 22.2 22.2 0 1 0 22.2 0 A 13.8 12.2 0 1 1 -22.2 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="5.6" cy="-3.7" r="6.2" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-10.8" cy="-12.3" r="4.9" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(306.7 268.4) rotate(24)">
+<circle r="18.5" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -13.3 0 A 13.3 13.3 0 1 0 13.3 0 A 8.3 7.3 0 1 1 -13.3 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="3.3" cy="-2.2" r="3.7" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-6.5" cy="-7.4" r="3.0" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(545.5 266.8) rotate(256)">
+<circle r="17.6" fill="url(#cell2)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -12.7 0 A 12.7 12.7 0 1 0 12.7 0 A 7.9 7.0 0 1 1 -12.7 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="3.2" cy="-2.1" r="3.5" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-6.2" cy="-7.0" r="2.8" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(265.3 307.0) rotate(269)">
+<circle r="18.1" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -13.1 0 A 13.1 13.1 0 1 0 13.1 0 A 8.1 7.2 0 1 1 -13.1 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="3.3" cy="-2.2" r="3.6" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-6.3" cy="-7.3" r="2.9" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(193.9 343.2) rotate(172)">
+<circle r="15.6" fill="url(#cell2)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -11.2 0 A 11.2 11.2 0 1 0 11.2 0 A 6.9 6.2 0 1 1 -11.2 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="2.8" cy="-1.9" r="3.1" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-5.4" cy="-6.2" r="2.5" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(323.2 428.5) rotate(254)">
+<circle r="14.2" fill="url(#cell)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -10.2 0 A 10.2 10.2 0 1 0 10.2 0 A 6.3 5.6 0 1 1 -10.2 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="2.6" cy="-1.7" r="2.8" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-5.0" cy="-5.7" r="2.3" fill="#fff" opacity=".55"/>
+</g>
+<g transform="translate(172.9 64.2) rotate(147)">
+<circle r="24.9" fill="url(#cell2)" stroke="#2E5E23" stroke-opacity=".35" stroke-width="1.5"/>
+<path d="M -18.0 0 A 18.0 18.0 0 1 0 18.0 0 A 11.1 9.9 0 1 1 -18.0 0 Z" fill="#2E5E23" opacity=".28"/>
+<circle cx="4.5" cy="-3.0" r="5.0" fill="#E9F4D9" opacity=".75"/>
+<circle cx="-8.7" cy="-10.0" r="4.0" fill="#fff" opacity=".55"/>
+</g>
+</g>
+<circle cx="400" cy="265" r="215" fill="none" stroke="#2E5E23" stroke-width="6" opacity=".55"/>
+<path d="M 250 115 A 203 203 0 0 1 420 62" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity=".55"/>
+<g transform="translate(600 440)"><rect width="90" height="6" rx="3" fill="#2E5E23"/><text x="0" y="30" font-family="Figtree, Arial, sans-serif" font-size="15" font-weight="700" fill="#2E5E23">10 μm</text></g>
+<g transform="translate(70 70)"><text font-family="Figtree, Arial, sans-serif" font-size="15" font-weight="700" fill="#2E5E23">2–10 μm</text><text y="20" font-family="Figtree, Arial, sans-serif" font-size="14" fill="#4F6B43">per cell</text></g>
+</svg>

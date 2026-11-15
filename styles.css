@@ -261,20 +261,11 @@ legend{font-family:var(--serif);font-size:24px;margin-bottom:14px;padding:0}
 @media (max-width:800px){.grid{grid-template-columns:1fr 1fr;gap:12px}.card-img{height:220px}.card-img img{height:180px;bottom:16px}.card-img img.short{height:86px;bottom:50px}.card-body{padding:14px}.card h3{font-size:19px}.card .tags{display:none}.card-foot{flex-direction:column;align-items:stretch}.proof{flex-direction:column;gap:2px}.add{width:100%}}
 
 /* science */
-.actives{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.active{border-radius:var(--r-lg);overflow:hidden;display:grid;grid-template-rows:260px auto}
-.active img{width:100%;height:100%;object-fit:cover}
-.active>div{padding:28px}
-.active h3{font-size:34px;font-style:normal}
-.active p{margin-top:12px;line-height:1.65;max-width:56ch}
-.active .in{font-weight:600;font-size:15px}
-.fuco{background:#F7E7D5}.fuco .in{color:#8A4D10}
-.chlor{background:#E1EEDB}.chlor .in{color:#2E5E23}
 .willst{margin:20px 0 0;border-radius:var(--r-lg);overflow:hidden;position:relative;background:#2C2822}
 .willst img{width:100%;height:280px;object-fit:cover;object-position:right center;opacity:.9}
 .willst figcaption{position:absolute;left:0;top:0;bottom:0;width:min(520px,60%);padding:32px;color:#F1EBE1;display:flex;flex-direction:column;justify-content:center;font-size:16px;background:linear-gradient(90deg,rgba(40,34,26,.92),rgba(40,34,26,.6) 80%,transparent)}
 .willst b{font-family:var(--serif);font-size:26px;font-weight:500;display:block;margin-bottom:8px}
-@media (max-width:800px){.actives{grid-template-columns:1fr}.active{grid-template-rows:200px auto}.willst img{height:360px;object-position:80% center}.willst figcaption{width:100%;top:auto;padding:22px;background:linear-gradient(0deg,rgba(40,34,26,.95) 55%,transparent)}}
+@media (max-width:800px){.actives{grid-template-columns:1fr}.willst img{height:360px;object-position:80% center}.willst figcaption{width:100%;top:auto;padding:22px;background:linear-gradient(0deg,rgba(40,34,26,.95) 55%,transparent)}}
 
 /* journey (sequence) */
 .journey{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:j}
@@ -486,8 +477,20 @@ body{font-weight:400;letter-spacing:-.003em}
 .kicker,.mr-for,.pd-line,.step-n{font-weight:600;font-size:16px}
 .card h3{font-weight:700;font-size:20px;letter-spacing:-.015em}
 .card-name{font-weight:600;font-size:15px}
-.line-tile h3,.active h3{font-weight:800}
+.line-tile h3,.ingr h3{font-weight:800}
 .stat b,.mr-stat b,.proof b,.res b,.trust-in b,.ritual-foot .total,.fr-foot .total,.co-lbl b{font-weight:800;letter-spacing:-.02em}
 .name-mean b{font-weight:800;letter-spacing:-.04em}
 .pair b,.bi .nm,.fr-steps .nm{font-weight:600}
 legend{font-weight:700;letter-spacing:-.01em}
+
+/* ingredient cards with code-drawn visuals */
+.ingr{border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;border:1px solid var(--line)}
+.ingr img{display:block;width:100%;height:auto;aspect-ratio:800/520}
+.ingr>div{padding:28px}
+.ingr h3{font-size:30px;letter-spacing:-.02em}
+.ingr p{margin-top:12px;line-height:1.65;max-width:56ch}
+.ingr .in{font-weight:600;font-size:15px}
+.ingr-fuco{background:#FBF1E6}.ingr-fuco .in{color:#8A4D10}.ingr-fuco h3{color:#8A4D10}
+.ingr-chlor{background:#EEF6E8}.ingr-chlor .in{color:#2E5E23}.ingr-chlor h3{color:#2E5E23}
+.actives{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media (max-width:800px){.actives{grid-template-columns:1fr}}
