@@ -25,11 +25,22 @@
     b.addEventListener("click", () => { go(i); restart(); });
     dots.appendChild(b);
   });
+  const track = $(".slides", hero);
+  slides.forEach((s, k) => {
+    s.setAttribute("aria-label", `${k + 1} of ${slides.length}`);
+    s.addEventListener("click", () => { if (k !== cur) { go(k); restart(); } });
+  });
+  function place() {
+    const s = slides[cur];
+    track.style.transform = `translateX(${(hero.clientWidth - s.offsetWidth) / 2 - s.offsetLeft}px)`;
+  }
   function go(i) {
     cur = (i + slides.length) % slides.length;
     slides.forEach((s, k) => { s.classList.toggle("is-active", k === cur); s.inert = k !== cur; });
     $$("button", dots).forEach((b, k) => b.setAttribute("aria-selected", k === cur));
+    place();
   }
+  addEventListener("resize", place);
   function restart() { clearInterval(timer); if (!reduce && !hero.classList.contains("paused")) timer = setInterval(() => go(cur + 1), 6500); }
   $(".prev", hero).addEventListener("click", () => { go(cur - 1); restart(); });
   $(".next", hero).addEventListener("click", () => { go(cur + 1); restart(); });
@@ -185,7 +196,12 @@
     bagEl.classList.remove("open"); bagEl.setAttribute("aria-hidden", "true"); scrim.hidden = true;
     document.body.style.overflow = ""; lastFocus && lastFocus.focus && lastFocus.focus();
   }
+  const track_ = (event, items, extra = {}) => {
+    try { (window.dataLayer = window.dataLayer || []).push({ ecommerce: null }); window.dataLayer.push({ event, ecommerce: { currency: "INR", value: items.reduce((s, x) => s + x.price * x.quantity, 0), items }, ...extra }); } catch (e) {}
+  };
+  const gaItem = (id, q = 1) => ({ item_id: id, item_name: full(P[id]), item_brand: "Healara", item_category: P[id].step, item_variant: P[id].size, price: P[id].mrp, quantity: q });
   function addItem(id, q = 1, silent = false) {
+    if (q > 0) track_("add_to_cart", [gaItem(id, q)]);
     bag[id] = (bag[id] || 0) + q; if (bag[id] <= 0) delete bag[id];
     saveBag(); updateCount(); syncAddButtons(); if (bagEl.classList.contains("open")) renderBag();
     if (!silent) toast(`${full(P[id])} added to your bag`, true);
@@ -226,6 +242,7 @@
   scrim.addEventListener("click", closeBag);
   bagEl.addEventListener("click", e => {
     const t = e.target.closest("button,a"); if (!t) return;
+    if (t.href && t.href.includes("wa.me")) track_("begin_checkout", Object.entries(bag).map(([id, q]) => gaItem(id, q)), { checkout_channel: "whatsapp" });
     if (t.dataset.inc) addItem(t.dataset.inc, 1, true);
     if (t.dataset.dec) addItem(t.dataset.dec, -1, true);
     if (t.dataset.rm) { delete bag[t.dataset.rm]; saveBag(); updateCount(); syncAddButtons(); renderBag(); }
@@ -274,6 +291,7 @@
         <div class="pairs">${pairsFor(p).map(x => `<a class="pair" href="#p/${x.id}">${img(x.id)}<span><b>${x.name}</b>${x.line}, ${inr(x.mrp)}</span></a>`).join("")}</div>
         <p class="disc">Individual results may vary. Results are from Healara’s clinical studies as published in the Healara India brochure.</p>
       </div></div>`;
+    track_("view_item", [gaItem(p.id)]);
     if (!pd.open) pd.showModal();
     pd.querySelector(".pd-body").scrollTop = 0;
     $(".pd-close", pd).addEventListener("click", () => pd.close());
@@ -300,6 +318,14 @@
     const a = e.target.closest('a[href^="#"]');
     if (a && pd.open && !a.getAttribute("href").startsWith("#p/")) pd.close();
   });
+
+  /* ---------- floating chat bubble ---------- */
+  const bubble = $("#chat-bubble");
+  let bubbleSeen = false;
+  try { bubbleSeen = localStorage.getItem("healara-chat-seen") === "1"; } catch (e) {}
+  if (!bubbleSeen) setTimeout(() => { bubble.hidden = false; }, 7000);
+  $(".chat-x", bubble).addEventListener("click", () => { bubble.hidden = true; try { localStorage.setItem("healara-chat-seen", "1"); } catch (e) {} });
+  $(".chat-btn").addEventListener("click", () => { bubble.hidden = true; try { localStorage.setItem("healara-chat-seen", "1"); } catch (e) {} track_("contact", [], { method: "whatsapp_fab" }); });
 
   /* ---------- mobile menu ---------- */
   const mb = $(".menu-btn"), mm = $("#mobile-menu");
